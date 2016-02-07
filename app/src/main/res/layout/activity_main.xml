@@ -11,18 +11,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView" android:background="@mipmap/bg_action_bar" android:text="微信红包" android:textColor="#fee1b4"
+            android:id="@+id/textView" android:background="@mipmap/bg_action_bar"
+           android:text="微信红包" android:textColor="#fee1b4"
             android:gravity="center_vertical|center_horizontal"
             android:textSize="26dp" android:autoText="false"/>
-    <ImageView
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:id="@+id/imageView3"
-            android:src="@mipmap/ic_books"
-            android:padding="10dp"
-            android:onClick="openNews"
-            android:layout_below="@+id/main_action_bar_placeholder"
-            android:layout_alignLeft="@+id/textView" android:layout_marginLeft="6dp" android:layout_marginTop="6dp"/>
 
     <ImageView
             android:layout_width="44dp"
@@ -38,43 +30,35 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView" android:src="@mipmap/open"
             android:scaleType="centerInside"
-            android:layout_above="@+id/textView3"
-            android:layout_centerHorizontal="true" android:onClick="openGithub" android:clickable="true"
-    />
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-            android:text="@string/app_version"
-            android:id="@+id/textView3"
-            android:gravity="center" android:onClick="openGithub"
-            android:clickable="true" android:layout_centerInParent="true" android:textColor="#c5a45e"
-            android:paddingTop="6dp" android:paddingBottom="1dp"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="查看最新版本功能介绍"
-            android:id="@+id/textView2" android:layout_below="@+id/textView3"
-            android:layout_centerHorizontal="true" android:clickable="true" android:onClick="openGithubReleaseNotes"
-            android:layout_marginTop="3dp" android:textColor="#999999"/>
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="https://github.com/geeeeeeeeek/WeChatLuckyMoney"
-            android:id="@+id/github" android:gravity="center_horizontal"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="20dp" android:layout_marginTop="20dp"
-            android:textColor="#5272ae" android:clickable="true" android:onClick="openGithub"/>
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
     <Button
             android:id="@+id/button_accessible"
             android:text="@string/service_name"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:onClick="onButtonClicked" android:layout_alignParentBottom="false"
-            android:background="#24e2b379" android:textColor="#c5a45e"
+            android:onClick="onButtonClicked"
+        android:background="#24e2b379" android:textColor="#c5a45e"
             style="?android:attr/borderlessButtonStyle"
-            android:layout_marginRight="16dp" android:layout_marginLeft="16dp" android:layout_above="@+id/github"
-            android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textSize="15sp"
+        android:text="松子微修改纯净版\n作者:github.com/geeeeeeeeek/WeChatLuckyMoney"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button_accessible" />
+
 </RelativeLayout>

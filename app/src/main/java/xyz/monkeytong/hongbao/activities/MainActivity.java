@@ -93,32 +93,11 @@ public class MainActivity extends Activity implements AccessibilityManager.Acces
         startActivity(accessibleIntent);
     }
 
-    public void openGithub(View view) {
-        Intent webViewIntent = new Intent(this, WebViewActivity.class);
-        webViewIntent.putExtra("title", "Github项目主页");
-        webViewIntent.putExtra("url", "https://github.com/geeeeeeeeek/WeChatLuckyMoney");
-        startActivity(webViewIntent);
-    }
-
-    public void openGithubReleaseNotes(View view) {
-        Intent webViewIntent = new Intent(this, WebViewActivity.class);
-        webViewIntent.putExtra("title", "发布日志");
-        webViewIntent.putExtra("url", "https://github.com/geeeeeeeeek/WeChatLuckyMoney/issues?q=is%3Aissue+is%3Aopen+label%3A%22release+notes%22");
-        startActivity(webViewIntent);
-    }
-
     public void openSettings(View view) {
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         settingsIntent.putExtra("title", "偏好设置");
         settingsIntent.putExtra("frag_id", "GeneralSettingsFragment");
         startActivity(settingsIntent);
-    }
-
-    public void openNews(View view) {
-        Intent webViewIntent = new Intent(this, WebViewActivity.class);
-        webViewIntent.putExtra("title", "红包攻略");
-        webViewIntent.putExtra("url", "http://sec-cdn.static.xiaomi.net/secStatic/proj/luckyNewsInfo/0127/index.html?v=1&");
-        startActivity(webViewIntent);
     }
 
     @Override
